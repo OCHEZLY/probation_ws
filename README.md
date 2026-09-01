@@ -155,7 +155,7 @@ angular.z — yaw left/CCW (+) / right/CW (−)[rad/s]
 
 ## 7. Where to Start
 
-Open [`src/probation_bringup/scripts/solution_template.py`](src/probation_bringup/scripts/solution_template.py).
+Open [`src/probation_bringup/scripts/solution_template.py`](src/probation_bringup/probation_bringup/solution_template.py).
 
 It contains a clean ROS2 node skeleton to start building your solution.
 
