@@ -43,7 +43,7 @@ probation_ws/
 │   ├── probation_bringup/              # Launch, config, and your solution scripts
 │   │   ├── launch/
 │   │   │   └── probation.launch.py     # <-- Main launch file for the simulation
-│   │   └── scripts/
+│   │   └── probation_bringup/
 │   │       └── solution_template.py    # <-- Start here: implement your solution
 │   └── vision/
 │       └── vision_msgs/                # Custom message definitions for bounding boxes
@@ -56,6 +56,12 @@ Start the container (once) and enter it (every time you open a new Ubuntu termin
 cd ~/probation_ws
 docker compose up -d dev-core
 docker compose exec dev-core bash
+```
+
+Build the workspace and source the overlay (first time, and after any code changes):
+```bash
+colcon build --symlink-install
+source install/setup.bash
 ```
 
 ### Step 1 — Launch the ROS2 Bridge
